@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="simpleFormPage">
+  <div>
     <router-view />
   </div>
 </template>

@@ -9,8 +9,6 @@ const products = computed(() => store.data?.products || []);
 <template>
     <div>
       <div v-if="store.status === 200">
-        <h2 class="success-title">Success</h2>
-  
         <div
           v-for="(product, index) in products"
           :key="index"

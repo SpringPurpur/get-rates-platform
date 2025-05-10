@@ -1,10 +1,9 @@
 <template>
     <div id="container">
-        <h1>Simple Form</h1>
+        <h1>Request rates for one-piece shipment</h1>
         <form @submit.prevent="handleSubmit" class="form-grid">
             <div class="form-columns">
                 <div class="left-column">
-                    <!-- LEFT COLUMN FIELDS -->
                     <label for="accountNumberTextInput">Account number:<span class="red-star">*</span>
                         <input type="text" id="accountNumberTextInput" v-model="accountNumberTextInput"
                             placeholder="Ex: 123456789" />

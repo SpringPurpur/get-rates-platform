@@ -32,7 +32,6 @@ app.post('/', async (req, res) => {
         const externalResponse = await axios.get(`https://express.api.dhl.com/mydhlapi/test/rates?${queryParams}`, { headers });
 
         res.json(externalResponse.data);
-        console.log(res);
     } catch (error){
         console.error("Error in proxy: ", error);
         res.status(500).json({ error: 'Failed to contact external API' });
